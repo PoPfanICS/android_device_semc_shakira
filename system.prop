@@ -1,0 +1,96 @@
+#
+# system.prop for X8
+#
+# RIL
+rild.libpath=/system/lib/libsemc_ril.so
+rild.libargs=-d/dev/smd0
+ro.telephony.ril.v3=icccardstatus,signalstrength,datacall
+ro.telephony.call_ring.delay=0
+ro.telephony.default_network=0
+ro.telephony.call_ring.multiple=false
+ro.ril.disable.power.collapse=1
+ro.ril.hep=1
+ro.ril.hsdpa.category=28
+ro.ril.enable.dtm=1
+ro.ril.enable.3g.prefix=1
+ro.ril.hsxpa=2
+ro.ril.hsupa.category=5
+ro.ril.gprsclass=10
+ro.telephony.ril_skip_locked=true
+persist.ro.ril.sms_sync_sending=1
+
+# Wlan
+wifi.interface=tiwlan0
+wifi.supplicant_scan_interval=45
+wifi.hotspot.ti=1
+wifi.ap.interface=tiap0
+
+# Media
+ro.media.dec.jpeg.memcap=10000000
+ro.media.enc.file.format=3gp,mp4
+ro.media.enc.vid.codec=m4v,h263
+ro.media.enc.vid.h263.width=176,640
+ro.media.enc.vid.h263.height=144,480
+ro.media.enc.vid.h263.bps=64000,1600000
+ro.media.enc.vid.h263.fps=1,30
+ro.media.enc.vid.m4v.width=176,640
+ro.media.enc.vid.m4v.height=144,480
+ro.media.enc.vid.m4v.bps=64000,1600000
+ro.media.enc.vid.m4v.fps=1,30
+ro.media.dec.aud.wma.enabled=1
+ro.media.dec.vid.wmv.enabled=1
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+
+# Screen
+hwui.render_dirty_regions=false
+hwui.disable_vsync=true
+hwui.print_config=choice
+debug.gr.numframebuffers=2
+settings.display.autobacklight=1
+
+# Performance
+debug.composition.type=mdp
+debug.performance.tuning=1
+debug.sf.hw=1
+ro.compcache.default=0
+video.accelerate.hw=1
+persist.sys.use_16bpp_alpha=1
+persist.sys.use_dithering=1
+debug.enabletr=false
+com.qc.hardware=true
+windowsmgr.max_events_per_sec=280
+
+# LCD
+ro.sf.lcd_density=160
+ro.opengles.version=131072
+
+# USB
+persist.sys.usb.config=mass_storage,adb
+persist.service.adb.enable=1
+
+# Dalvik tweaks
+dalvik.vm.heapsize=48m
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.checkjni=false
+
+#zRam tweaks
+persist.service.zram=1
+ro.zram.default=18
+
+# GPS
+ro.ril.enable.a52=1
+ro.ril.enable.a53=1
+ro.ril.def.agps.mode=2
+ro.ril.def.agps.feature=1
+
+# Camera
+debug.camcorder.disablemeta=1
+persist.pmem.camera=4000000
+
+# Other tweaks
+persist.android.strictmode=0
+persist.service.mount.playsnd=1
