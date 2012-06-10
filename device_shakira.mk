@@ -25,6 +25,7 @@ $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 $(call inherit-product-if-exists, device/semc/shakira/vendor-blobs.mk)
 
 # Kernel file
+$TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel
 
