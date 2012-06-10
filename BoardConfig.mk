@@ -152,6 +152,3 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/f
 # A custom ota package maker for a device without a boot partition
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/semc/shakira/releasetools/semc_ota_from_target_files
 TARGET_PREBUILT_KERNEL := device/semc/shakira/prebuilt/kernel
-
-# Build with Google Apps
-COPY_GAPPS := true
