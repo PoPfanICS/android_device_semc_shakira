@@ -111,14 +111,13 @@ PRODUCT_COPY_FILES += \
 endif
 
 # -------------------- PACKAGES --------------------
-# PoPfan removed (hwcomposer.default)
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.primary.delta \
     audio_policy.delta \
     camera.msm7x27 \
     gralloc.msm7x27 \
-    copybit.msm7x27 \
+    hwcomposer.default \
     hwcomposer.msm7x27 \
     gps.delta \
     libOmxCore \
