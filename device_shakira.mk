@@ -56,10 +56,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/bin/tiap_loader.sh:system/bin/tiap_loader.sh \
     $(LOCAL_PATH)/prebuilt/bin/wlan_cu:system/bin/wlan_cu \
     $(LOCAL_PATH)/prebuilt/bin/wlan_loader:system/bin/wlan_loader \
+    $(LOCAL_PATH)/prebuilt/etc/01_qcomm_omx.cfg:system/etc/01_qcomm_omx.cfg \
+    $(LOCAL_PATH)/prebuilt/etc/adreno_config.txt:system/etc/adreno_config.txt \
     $(LOCAL_PATH)/prebuilt/etc/AudioFilter.csv:system/etc/AudioFilter.csv \
     $(LOCAL_PATH)/prebuilt/etc/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
     $(LOCAL_PATH)/prebuilt/etc/vold.fstab:system/etc/vold.fstab \
     $(LOCAL_PATH)/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    $(LOCAL_PATH)/prebuilt/etc/init.d/01mountext:system/etc/init.d/01mountext \
+    $(LOCAL_PATH)/prebuilt/etc/init.d/02popfan:system/etc/init.d/02popfan \
+    $(LOCAL_PATH)/prebuilt/etc/init.d/10app2sd:system/etc/init.d/10app2sd \
     $(LOCAL_PATH)/prebuilt/etc/init.d/10dnsconf:system/etc/init.d/10dnsconf \
     $(LOCAL_PATH)/prebuilt/etc/init.d/10hostapconf:system/etc/init.d/10hostapconf \
     $(LOCAL_PATH)/prebuilt/etc/wifi/dnsmasq.conf:system/etc/wifi/dnsmasq.conf \
