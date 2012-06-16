@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/vendor/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
     $(LOCAL_PATH)/prebuilt/vendor/lib/libauth.so:system/lib/libauth.so \
     $(LOCAL_PATH)/prebuilt/vendor/lib/libC2D2.so:system/lib/libC2D2.so \
+    $(LOCAL_PATH)/prebuilt/vendor/lib/libcamera.so:obj/lib/libcamera.so \
     $(LOCAL_PATH)/prebuilt/vendor/lib/libcamera.so:system/lib/libcamera.so \
     $(LOCAL_PATH)/prebuilt/vendor/lib/libcm.so:system/lib/libcm.so \
     $(LOCAL_PATH)/prebuilt/vendor/lib/libdiag.so:system/lib/libdiag.so \
