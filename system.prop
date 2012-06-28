@@ -43,6 +43,7 @@ media.stagefright.enable-player=true
 media.stagefright.enable-meta=true
 media.stagefright.enable-scan=true
 media.stagefright.enable-http=true
+persist.sys.speaker-attn=6
 
 # Screen
 hwui.render_dirty_regions=false
