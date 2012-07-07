@@ -458,11 +458,6 @@ def LoadSystemFiles(z):
       fn = "system/" + info.filename[7:]
       data = z.read(info.filename)
       out[fn] = common.File(fn, data)
-  for info in z.infolist():
-    if info.filename.startswith("DATA/") and not IsSymlink(info):
-      fn = "data/" + info.filename[7:]
-      data = z.read(info.filename)
-      out[fn] = common.File(fn, data)
   return out
 
 
