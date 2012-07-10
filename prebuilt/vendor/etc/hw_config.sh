@@ -3,7 +3,6 @@ dev=/sys/devices/platform/msm_pmic_vibrator
 echo 2400 > $dev/voltage_mv
 
 # lm3530 LMU configuration
-bmod=/data/popfan/brightnessmode
 dev=/sys/devices/platform/i2c-adapter/i2c-0/0-0036
 echo linear > $dev/br::mapping  # linear exp
 echo 32768 > $dev/br::rate::up   # 8, 1024, 2048, 4096, 8192, 16384, 32768, 65538
@@ -15,7 +14,7 @@ echo 50,50,50,50,50 > $dev/curve::targets
 echo high-z > $dev/als::r1      # high-z, 9360, 5560 .. 677.6 (see chip mnual)
 echo high-z > $dev/als::r2      # high-z, 9360, 5560 .. 677.6 (see chip mnual)
 echo 128 > $dev/als::avg-t     # 32, 63, 128, 256, 512, 1024, 2048, 4096
-cat $bmod > $dev/mode
+echo i2c_pwm_als > $dev/mode
 
 # Proximity sensor configuration
 dev=/sys/devices/platform/proximity-sensor/semc/proximity-sensor

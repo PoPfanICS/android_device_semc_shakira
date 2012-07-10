@@ -14,7 +14,6 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/vendor/data/brightnessmode:data/popfan/brightnessmode \
     $(LOCAL_PATH)/prebuilt/vendor/bin/akmd2:system/bin/akmd2 \
     $(LOCAL_PATH)/prebuilt/vendor/bin/chargemon:system/bin/chargemon \
     $(LOCAL_PATH)/prebuilt/vendor/bin/hciattach:system/bin/hciattach \
