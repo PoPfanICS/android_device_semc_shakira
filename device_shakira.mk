@@ -118,8 +118,8 @@ endif
 # -------------------- PACKAGES --------------------
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    audio.primary.delta \
-    audio_policy.delta \
+    audio.primary.msm7x27 \
+    audio_policy.msm7x27 \
     camera.msm7x27 \
     gralloc.msm7x27 \
     hwcomposer.default \
